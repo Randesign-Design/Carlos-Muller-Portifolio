@@ -1,22 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: century, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
+    color: hsl(0, 0%, 20%);
   }
   
   header {
-    background: #333;
+    background: #161616;
     color: #fff;
     padding: 1rem 0;
   }
-
-   
-
-
-
+  
   header .container {
     display: flex;
     justify-content: space-between;
@@ -34,16 +30,17 @@ body {
     margin-left: 20px;
   }
   
-  header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
   header nav ul li a:hover {
     color: #ff6347;
   }
   
+body {
+
+    background-color: #080808;
+
+    color: #ddd
+}
+
   .container {
     width: 80%;
     max-width: 1200px;
@@ -65,44 +62,15 @@ body {
     gap: 20px;
   }
   
-  button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
+.projeto-item img {
+    width: 100%;
     border-radius: 5px;
-    font-size: 14px;
-    margin-top: 10px;
-  }
-  
-  button:hover {
-    background-color: #ff6347;
-  }
+margin-bottom: 10px;
+    
+}
 
-  .galeria {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  
-  .galeria img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-  
-  .galeria img:hover {
-    transform: scale(1.1);
-  }
-  
   .projeto-item {
-    background: #fff;
+    background: #080808;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -131,9 +99,6 @@ body {
   footer {
     text-align: center;
     padding: 1rem 0;
-    background: #333;
+    background: #161616;
     color: #fff;
   }
-
-
- 
