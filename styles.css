@@ -1,14 +1,15 @@
 body {
-    font-family: century, sans-serif;
+    font-family: 
+     'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1;
     background-color: #f4f4f4;
     color: hsl(0, 0%, 20%);
   }
   
   header {
-    background: #161616;
+    background: #111111;
     color: #fff;
     padding: 1rem 0;
   }
@@ -16,7 +17,7 @@ body {
   header .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center ;
   }
   
   header nav ul {
@@ -99,6 +100,22 @@ margin-bottom: 10px;
   footer {
     text-align: center;
     padding: 1rem 0;
-    background: #161616;
+    background: #111111;
     color: #fff;
+  }
+
+
+  .botão-de-email {
+    background-color: #007BFF; /* Cor de fundo */
+    color:#080808;
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de clique */
+    transition: background-color 0.3s ease; /* Efeito suave ao passar o mouse */
+  }
+  
+  .email-button:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
   }
