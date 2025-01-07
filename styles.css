@@ -217,3 +217,27 @@ margin-bottom: 10px;
     }
   }
   
+
+  .cabeçalho-do-karalho {
+    background-color: #444; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    font-size: 24px; /* Tamanho do texto */
+  }
+  
+
+  @media (max-width: 768px) {
+    .pagina-detalhes {
+      font-size: 18px; /* Reduz o tamanho do texto no celular */
+      padding: 10px; /* Diminui o espaçamento interno */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .pagina-detalhes {
+      font-size: 16px; /* Reduz ainda mais o texto para telas muito pequenas */
+      padding: 8px; /* Ajusta o espaçamento */
+    }
+  }
+  
