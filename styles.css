@@ -193,7 +193,7 @@ margin-bottom: 10px;
     align-self: center;
   }
  
-  @media (max-width: 768px) {
+  @media (max-width: 100%) {
     .galeria {
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Colunas menores no celular */
     }
@@ -207,9 +207,9 @@ margin-bottom: 10px;
   }
   
 
-  @media (max-width: 768px) {
+  @media (max-width: 100%) {
     .galeria {
-      flex-direction: column; /* Alinha as imagens em uma única coluna */
+      flex-direction:column; /* Alinha as imagens em uma única coluna */
       gap: 10px; /* Reduz o espaçamento entre elas */
     }
   
@@ -231,7 +231,7 @@ margin-bottom: 10px;
 
   @media screen {  
     .pagina-detalhes {
-      max-width:768px;
+      max-width: 100%;;
       font-size: 18px; /* Reduz o tamanho do texto no celular */
       padding: 10px; /* Diminui o espaçamento interno */
     }
@@ -244,7 +244,7 @@ margin-bottom: 10px;
     width: 100%;
     font-size: 16px;
     padding: 10px;
-    
+
     }
 
   }
@@ -257,7 +257,7 @@ margin-bottom: 10px;
   }
 }
 
-  @media (max-width: 480px) {
+  @media (max-width: 100%) {
     .pagina-detalhes {
       font-size: 16px; /* Reduz ainda mais o texto para telas muito pequenas */
       padding: 8px; /* Ajusta o espaçamento */
@@ -270,3 +270,5 @@ margin-bottom: 10px;
       padding: 10px; /* Diminui o espaçamento interno */
     } 
   }
+
+  
