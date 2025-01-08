@@ -238,10 +238,20 @@ margin-bottom: 10px;
   }
   
 
+  @media screen {
+    .asfoto {
+
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    
+    }
+
+  }
 @media screen {
 
   .cabeçalho-do-karalho {
-  max-width:768px;
+  width:100%;
       font-size: 18px; /* Reduz o tamanho do texto no celular */
 
   }
@@ -255,7 +265,7 @@ margin-bottom: 10px;
   }
    @media screen { 
 .CABEÇINHA-DO-INHA {
-    max-width:768px;
+    width:100% ;
       font-size: 18px; /* Reduz o tamanho do texto no celular */
       padding: 10px; /* Diminui o espaçamento interno */
     } 
