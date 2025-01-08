@@ -237,6 +237,16 @@ margin-bottom: 10px;
     }
   }
   
+
+@media screen {
+
+  .cabeçalho-do-karalho {
+  max-width:768px;
+      font-size: 18px; /* Reduz o tamanho do texto no celular */
+
+  }
+}
+
   @media (max-width: 480px) {
     .pagina-detalhes {
       font-size: 16px; /* Reduz ainda mais o texto para telas muito pequenas */
