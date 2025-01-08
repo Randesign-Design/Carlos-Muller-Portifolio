@@ -253,4 +253,10 @@ margin-bottom: 10px;
       padding: 8px; /* Ajusta o espaçamento */
     }
   }
-  
+   @media screen { 
+.CABEÇINHA-DO-INHA {
+    max-width:768px;
+      font-size: 18px; /* Reduz o tamanho do texto no celular */
+      padding: 10px; /* Diminui o espaçamento interno */
+    } 
+  }
