@@ -229,8 +229,9 @@ margin-bottom: 10px;
   }
   
 
-  @media (max-width: 768px) {
+  @media screen {  
     .pagina-detalhes {
+      max-width:768px;
       font-size: 18px; /* Reduz o tamanho do texto no celular */
       padding: 10px; /* Diminui o espaçamento interno */
     }
