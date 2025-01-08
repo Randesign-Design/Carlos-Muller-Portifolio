@@ -187,9 +187,10 @@ margin-bottom: 10px;
   }
   
   main img {
-   width: 600px;
+   width: 614px;
     height: auto;
     border-radius: 10px;
+    align-self: center;
   }
  
   @media (max-width: 768px) {
@@ -201,6 +202,7 @@ margin-bottom: 10px;
       max-width: 100%; /* Garante que as imagens ocupem toda a largura do container */
       height: auto; /* Mantém a proporção */
       border-radius: 5px; /* Bordas menores para dispositivos móveis */
+      
     }
   }
   
