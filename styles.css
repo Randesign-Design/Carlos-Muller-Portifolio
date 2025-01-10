@@ -130,7 +130,7 @@ margin-bottom: 10px;
   
   header {
     background-color: #1d1d1d;
-    color: #fff;
+    color: #ffffff;
     padding: 20px;
     text-align: center;
   }
@@ -192,8 +192,10 @@ margin-bottom: 10px;
     border-radius: 10px;
     align-self: center;
   }
- 
-  @media (max-width: 100%) {
+
+  
+
+  @media (max-width: 768px) {
     .galeria {
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Colunas menores no celular */
     }
@@ -207,9 +209,9 @@ margin-bottom: 10px;
   }
   
 
-  @media (max-width: 100%) {
+  @media (max-width: 768px) {
     .galeria {
-      flex-direction:column; /* Alinha as imagens em uma única coluna */
+      flex-direction: column; /* Alinha as imagens em uma única coluna */
       gap: 10px; /* Reduz o espaçamento entre elas */
     }
   
@@ -220,55 +222,43 @@ margin-bottom: 10px;
   }
   
 
-  .cabeçalho-do-karalho {
-    background-color: #444; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    text-align: center; /* Centraliza o texto */
-    padding: 20px; /* Espaçamento interno */
-    font-size: 24px; /* Tamanho do texto */
-  }
-  
-
-  @media screen {  
+  @media (max-width: 768px) {
     .pagina-detalhes {
-      max-width: 100%;;
       font-size: 18px; /* Reduz o tamanho do texto no celular */
       padding: 10px; /* Diminui o espaçamento interno */
     }
   }
   
-
-  @media screen {
-    .asfoto {
-
-    width: 100%;
-    font-size: 16px;
-    padding: 10px;
-
-    }
-
-  }
-@media screen {
-
-  .cabeçalho-do-karalho {
-  width:100%;
-      font-size: 18px; /* Reduz o tamanho do texto no celular */
-
-  }
-}
-
-  @media (max-width: 100%) {
+  @media (max-width: 480px) {
     .pagina-detalhes {
       font-size: 16px; /* Reduz ainda mais o texto para telas muito pequenas */
       padding: 8px; /* Ajusta o espaçamento */
     }
   }
-   @media screen { 
-.CABEÇINHA-DO-INHA {
-    width:100% ;
-      font-size: 18px; /* Reduz o tamanho do texto no celular */
-      padding: 10px; /* Diminui o espaçamento interno */
-    } 
+  
+  .header-secundario {
+
+
+    background-color: #111111; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    font-size: 24px; /* Tamanho do texto */
   }
 
+  @media (max-width: 768px) {
+    .header-secundario {
+      padding: 20px;
+      background-size: contain;
+    }
   
+    .header-secundario h1 {
+      font-size: 24px;
+    }
+  
+    .header-secundario p {
+      font-size: 16px;
+    }
+  }
+
+
