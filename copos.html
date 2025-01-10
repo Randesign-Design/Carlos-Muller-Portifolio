@@ -16,24 +16,70 @@
     <div class="Galeria-dos-Copos">
 
  <img src="imagens/copo stanley.jpg" class="imagem-galeria" alt="Arte 1">
+ <img src="imagens/Larissa.jpg" class="imagem-galeria" alt="">
 
- <img src="imagens/cristiano dual lightn.png" class="imagem-galeria" alt="">
 
- <img src="imagens/CR7 2.png ggg.png" class="imagem-galeria" alt="2">
+  <video muted height="auto" class="imagem-galeria">
 
-  <img src="imagens/brayan 1.jpg" class="imagem-galeria" alt="">
+    <source src="imagens/Gabrielcopo.mp4" type="video/mp4">
 
-  <img src="imagens/brayan 2.jpg" class="imagem-galeria" alt="">
+  </video>
 
-  <img src="imagens/Fernandão.png" class="imagem-galeria" alt="">
+  <video height="auto" class="imagem-galeria">
 
-  <img src="imagens/Vini e ney.png" class="imagem-galeria" alt="">
+    <source src="imagens/Heremescopo.mp4" type="video/mp4">
 
-  <img src="imagens/vinicius .jpg" class="imagem-galeria" alt="">
+  </video>
 
-  <img src="imagens/peterson.jpg" class="imagem-galeria" alt="">
+  <video height="auto" class="imagem-galeria">
 
+    <source src="imagens/Interrosa.mp4" type="video/mp4">
+
+  </video>
+
+  <video height="auto" class="imagem-galeria">
+
+    <source src="imagens/julio.mp4" type="video/mp4">
+
+  </video>
+
+  <video height="auto" class="imagem-galeria">
+
+    <source src="imagens/nutri kaua copo.mp4" type="video/mp4">
+
+  </video>
 </div>
+
+<script>
+  // Seleciona todos os vídeos com a classe "video-hover"
+  const videos = document.querySelectorAll('.imagem-galeria');
+
+  // Adiciona eventos para cada vídeo
+ 
+    videos.forEach((video) => {
+    // Reproduz o vídeo apenas quando o mouse estiver diretamente sobre ele
+    video.addEventListener('mouseover', () => {
+      video.play();
+    });
+
+    // Pausa o vídeo ao tirar o mouse
+    video.addEventListener('mouseout', () => {
+      video.pause();
+    });
+  });
+
+  // Seleciona todos os vídeos com a classe "video-rapido"
+  const video = document.querySelectorAll('.imagem-galeria');
+
+  // Define a velocidade para cada vídeo
+  videos.forEach((video) => {
+    video.playbackRate = 1.5; // 2.0 significa o dobro da velocidade
+  });
+
+
+</script>
+
+
 
 </body>
 </html>
