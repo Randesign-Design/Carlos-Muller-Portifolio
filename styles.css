@@ -195,7 +195,7 @@ margin-bottom: 10px;
 
   
 
-  @media (max-width: 768px) {
+  @media ( min-width: 1080px; and  max-width: 768px) {
     .galeria {
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Colunas menores no celular */
     }
