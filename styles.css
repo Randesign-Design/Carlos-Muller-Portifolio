@@ -37,7 +37,7 @@ body {
   
 body {
 
-    background-color: #080808;
+    background-color: #111111;
 
     color: #ddd
 }
@@ -71,7 +71,7 @@ margin-bottom: 10px;
 }
 
   .projeto-item {
-    background: #080808;
+    background: #111111;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -87,7 +87,7 @@ margin-bottom: 10px;
     margin-top: 10px;
     padding: 0.5rem 1rem;
     color: #fff;
-    background: #333;
+    background: #111111;
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s;
@@ -120,118 +120,6 @@ margin-bottom: 10px;
     background-color: #0056b3; /* Cor ao passar o mouse */
   }
 
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .arte {
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-  }
-  
-  .arte img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .veja-mais {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .veja-mais:hover {
-    background-color: #0056b3;
-  }
-  
-  .voltar {
-    display: inline-block;
-    margin: 20px;
-    padding: 10px 15px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .voltar:hover {
-    background-color: #555;
-  }
-  
-  main img {
-    width: 614px;
-    height:714px;
-    border-radius: 10px;
-    ;
-  }
 
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+  /* css dos flyers  */
   
-  .imagem-galeria {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-    margin: 0 auto;
-  }
-  
-  @media (max-width: 768px) {
-    .galeria {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-  
-    .imagem-galeria {
-      max-width: 90%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .galeria {
-      grid-template-columns: 1fr;
-    }
-  
-    .imagem-galeria {
-      max-width: 100%;
-    }
-  }
-  @media (min-width: 1024px) {
-    .imagem-galeria {
-
-      max-width: 400px; /* Tamanho original da imagem */
-      height: auto /* Proporção original */
-      
-    }
-  }
-    
