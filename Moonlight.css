@@ -6,13 +6,14 @@ body {
   }
   
   header {
+    height: 125px;
     background-color: #111111;
-    color: #fff;
+    color: #daa520;
     padding: 20px;
     text-align: center;
   }
   
-  .Galeria-de-logos{
+  .Galeria-Moonlight{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -70,7 +71,7 @@ body {
   }
   
   @media (max-width: 768px) {
-    .Galeria-de-logos {
+    .Galeria-Moonlight {
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
   
@@ -80,7 +81,7 @@ body {
   }
   
   @media (max-width: 480px) {
-    .Galeria-de-logos {
+    .Galeria-Moonlight {
       grid-template-columns: 1fr;
     }
   

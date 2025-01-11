@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logos</title>
+  <link rel="stylesheet" href="Moonlight.css">
+</head>
+<body>
+  <header class="header-secundario">
+    <a href="index.html" class="voltar">← Voltar para a Galeria</a>
+    <h1> Bem-vindo a Moonlight</h1>
+    
+  </header>
+  <main>
+   
+    <div class="Galeria-Moonlight">
+
+ <img src="imagens/moonlight.png" class="imagem-galeria" alt="Arte 1">
+
+ <img src="imagens/moonlight negativo.png" class="imagem-galeria" alt="">
+
+ <img src="imagens/emblema ml.png" class="imagem-galeria" alt="">
+
+ <img src="imagens/aplicada.jpg" class="imagem-galeria" alt="">
+
+ <img src="imagens/nesseceir.jpg" class="imagem-galeria" alt="2">
+
+  <img src="imagens/mochila.jpg" class="imagem-galeria" alt="">
+
+  <img src="imagens/moonlight camisa fem frente.jpg" class="imagem-galeria" alt="">
+
+  <img src="imagens/moonlight camisa masc frente.jpg" class="imagem-galeria" alt="">
+
+  <img src="imagens/squeeze.jpg" class="imagem-galeria" alt="">
+
+  <img src="imagens/moonlight camisa fem costa.jpg" class="imagem-galeria" alt="">
+  
+  <img src="imagens/moonlight camisa masc costa.jpg" class="imagem-galeria" alt="">
+
+<img src="imagens/moon cartão.png" class="imagem-galeria" alt="">
+
+<img src="imagens/copo termi.jpg" class="imagem-galeria" alt="">
+
+<video muuted loop src="imagens/moon video.mp4" class="imagem-galeria"></video>
+
+
+</div>
+
+<script>
+  // Seleciona todos os vídeos com a classe "video-hover"
+  const videos = document.querySelectorAll('.imagem-galeria');
+
+  // Adiciona eventos para cada vídeo
+ 
+    videos.forEach((video) => {
+    // Reproduz o vídeo apenas quando o mouse estiver diretamente sobre ele
+    video.addEventListener('mouseover', () => {
+      video.play();
+    });
+
+    // Pausa o vídeo ao tirar o mouse
+    video.addEventListener('mouseout', () => {
+      video.pause();
+      video.currentTime = 0;
+    });
+  });
+
+  // Seleciona todos os vídeos com a classe "video-rapido"
+  const video = document.querySelectorAll('.imagem-galeria');
+
+  // Define a velocidade para cada vídeo
+  videos.forEach((video) => {
+    video.playbackRate = 1.5; // 2.0 significa o dobro da velocidade
+  });
+
+
+</script>
+
+
+
+
+</body>
+</html>
