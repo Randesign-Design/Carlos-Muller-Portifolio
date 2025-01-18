@@ -6,8 +6,8 @@ body {
   }
   
   header {
-    background-color: #111111;
-    color: #fff;
+    background: #a3242e;
+    color: #f2f0ef;
     padding: 20px;
     text-align: center;
   }
@@ -51,14 +51,15 @@ body {
     display: inline-block;
     margin: 20px;
     padding: 10px 15px;
-    background-color: #333;
-    color: white;
+    background-color: #f2f0ef;
+    color: #a3242e;
     text-decoration: none;
     border-radius: 5px;
   }
   
   .voltar:hover {
-    background-color: #555;
+    background-color: #771c23;
+    color: #f2f0ef;
   }
   
   .imagem-galeria {

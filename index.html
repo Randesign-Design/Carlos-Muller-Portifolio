@@ -22,25 +22,29 @@ imagens _para guradar as imagens usadas
       <h1>Meu Portfólio</h1>
       
     </div>
+  
   </header>
-
+  
+  
+  
   <section id="sobre" class="container">
     <h2>Sobre Mim</h2>
-    <p>Olá, meu nome é Carlos Eduardo Muller. Sou estudante do SENAI de design gráfico. Tenho experiência em tratamento de imagens, vetorização, criação de marcas,.</p>
+    <p1>Olá, meu nome é Carlos Eduardo Muller. Sou estudante do SENAI de design gráfico. Tenho experiência em tratamento de imagens, vetorização, criação de marcas,.</p1>
+
   </section>
+ 
 
   <section id="projetos" class="container">
     <h2>Meus Projetos</h2>
     <div class="projetos-grid">
 
       <!--Flyers esportivos-->
-      <div class="projeto-item">
+      <div class="capa-video">
         <h3>Flyers Esportivos</h3>
-        <img src="imagens/flyers.png" 
-        alt="Arte 1">
+       <video src="imagens/SITE CAPA FLYERS.mp4" class="capa"></video>
   
         <p>Desenvolvimento e estudo de flyer esportivos para  posts de instagram</p>
-        <a href="Flyers esportivos.html" target="_blank">Ver mais</a>
+        <a href="Flyers esportivos.html">Ver mais</a>
       </div>
 
 <!--Copos stanley-->
@@ -49,7 +53,7 @@ imagens _para guradar as imagens usadas
         <img src="imagens/copos capa.png" 
         alt="Arte 2">
         <p>Copos Stanley personalizados</p>
-        <a href="copos.html" target="_blank">Ver mais</a>
+        <a href="copos.html">Ver mais</a>
       </div>
 
 
@@ -57,7 +61,7 @@ imagens _para guradar as imagens usadas
         <h3>Posts para Instagram</h3>
         <img src="imagens/instagram.png" alt="">
         <p>Posts feitos para instagram</p>
-        <a href="posts.html" target="_blank">Ver mais</a>
+        <a href="posts.html">Ver mais</a>
 
       </div>
 
@@ -65,19 +69,24 @@ imagens _para guradar as imagens usadas
         <h3>Logos</h3>
         <img src="imagens/logos capa.png" alt="">
         <p> Logos para fotos de perfil de midias sociais</p>
-        <a href="logos.html" target="_blank">Ver mais</a>
+        <a href="logos.html">Ver mais</a>
 
     </div>
 
     <div class="projeto-item">
 <h3>Moonlight</h3>
 <img src="imagens/moonlight.png" alt="">
-<p>identidade visual criada da Gráfica Moonlight (projeto SENAI)</p>
-<a href="Moonlight.html" target="_blank">Ver mais</a>
+<p>Identidade visual criada da Gráfica Moonlight (Projeto SENAI)</p>
+<a href="Moonlight.html">Ver mais</a>
 
     </div>
 
-  
+    <div class="projeto-item">
+      <h3>Projetos Senai</h3>
+      <img src="imagens/senai capa.png" alt="">
+      <p>Projetos e avaliações do SENAI</p>
+      <a href="Senai.html">Ver mais</a>
+
   </section>
 
 
@@ -90,6 +99,28 @@ imagens _para guradar as imagens usadas
 
     <p>© 2025 Carlos Muller. Todos os direitos reservados.</p>
   </footer>
+
 </body>
+
+<script>
+  // Seleciona todos os vídeos com a classe "video-hover"
+  const videos = document.querySelectorAll('.capa');
+
+  // Adiciona eventos para cada vídeo
+ 
+    videos.forEach((video) => {
+    // Reproduz o vídeo apenas quando o mouse estiver diretamente sobre ele
+    video.addEventListener('mouseover', () => {
+      video.play();
+    });
+
+    // Pausa o vídeo ao tirar o mouse
+    video.addEventListener('mouseout', () => {
+      video.pause();
+      video.currentTime = 3;
+    });
+  });
+</script>
+
 </html>
 

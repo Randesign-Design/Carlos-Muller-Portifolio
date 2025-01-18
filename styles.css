@@ -1,6 +1,6 @@
 body {
     font-family: 
-     'Courier New', Courier, monospace;
+    Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -9,15 +9,16 @@ body {
   }
   
   header {
-    background: #111111;
-    color: #ffffff;
+    background: #a3242e;
+    color: #f2f0ef;
     padding: 1rem 0;
   }
   
   header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items:center ;
+
   }
   
   header nav ul {
@@ -37,9 +38,9 @@ body {
   
 body {
 
-    background-color: #111111;
+    background-color: #f2f0ef;
 
-    color: #ddd
+    color: #a3242e
 }
 
   .container {
@@ -55,8 +56,19 @@ body {
   h2 {
     text-align: center;
     margin-bottom: 1rem;
+    font-size: 50px;
   }
   
+p1{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+}
+
+p{
+
+font-size: 20px;
+}
+
   .projetos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -69,11 +81,11 @@ body {
 margin-bottom: 10px;
     
 }
-
+ 
   .projeto-item {
-    background: #111111;
+    background: #f2f0ef;
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 2px solid #a3242e;
     border-radius: 5px;
     text-align: center;
   }
@@ -86,27 +98,62 @@ margin-bottom: 10px;
     display: inline-block;
     margin-top: 10px;
     padding: 0.5rem 1rem;
-    color: #fff;
-    background: #111111;
+    color: #f2f0ef;
+    background: #a3242e;
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s;
   }
   
   .projeto-item a:hover {
-    background: #ff6347;
+    background: #771c23;
+    color: #f2f0ef;
   }
   
+  .capa-video video {
+    width: 100%;
+    border-radius: 5px;
+margin-bottom: 10px;
+    
+}
+ 
+  .capa-video {
+    background: #f2f0ef;
+    padding: 1rem;
+    border: 2px solid #a3242e;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .capa-video h3 {
+    margin-top: 0;
+  }
+  
+  .capa-video a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    color: #f2f0ef;
+    background: #a3242e;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .capa-video a:hover {
+    background: #771c23;
+    color: #f2f0ef;
+  }
   footer {
     text-align: center;
     padding: 1rem 0;
-    background: #111111;
-    color: #fff;
+    color: #f2f0ef;
+    background-color: #a3242e;
   }
 
 
   .botão-de-email {
-    background-color: #007BFF; /* Cor de fundo */
+    background-color: #f2f0ef; /* Cor de fundo */
     color:#080808;
     border: none; /* Sem borda */
     padding: 10px 20px; /* Espaçamento interno */
@@ -116,10 +163,11 @@ margin-bottom: 10px;
     transition: background-color 0.3s ease; /* Efeito suave ao passar o mouse */
   }
   
-  .email-button:hover {
-    background-color: #0056b3; /* Cor ao passar o mouse */
+  .botão-de-email:hover {
+    background: #771c23;
+    color: #f2f0ef; /* Cor ao passar o mouse */
   }
 
-
+  
   /* css dos flyers  */
   
