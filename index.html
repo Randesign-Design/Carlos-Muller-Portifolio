@@ -42,7 +42,7 @@ imagens _para guradar as imagens usadas
       <div class="capa-video">
         <h3>Flyers Esportivos</h3>
        <video src="imagens/SITE CAPA FLYERS.mp4" class="capa"></video>
-  
+   <div id="time-display">Voltar para: 0:03</div>
         <p>Desenvolvimento e estudo de flyer esportivos para  posts de instagram</p>
         <a href="Flyers esportivos.html">Ver mais</a>
       </div>
@@ -98,6 +98,11 @@ imagens _para guradar as imagens usadas
 </body>
 
 <script>
+  const video = document.getElementById('video');
+    const timeDisplay = document.getElementById('time-display');
+
+    // Defina o momento exato ao qual deseja retornar
+    const specificTime = 3; // exemplo: 10 segundos
   // Seleciona todos os vídeos com a classe "video-hover"
   const videos = document.querySelectorAll('.capa');
 
