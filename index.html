@@ -26,7 +26,7 @@ imagens _para guradar as imagens usadas
   </header>
   <div id="loading-indicator" class="loading">
     <video autoplay muted loop>
-      <source src="imagens/logo animada principal .mp4" type="video/mp4" />
+      <source muted src="imagens/logo animada principal .mp4" type="video/mp4" />
       Seu navegador não suporta vídeos HTML5.
     </video>
     <p></p>
@@ -47,7 +47,7 @@ imagens _para guradar as imagens usadas
       <!--Flyers esportivos-->
       <div class="capa-video">
         <h3>Flyers Esportivos</h3>
-       <video src="imagens/capa site flyer.mp4" class="capa"></video>
+       <video muted src="imagens/capa site flyer.mp4" class="capa"></video>
   
         <p>Desenvolvimento e estudo de flyer esportivos para  posts de instagram</p>
         <a href="Flyers esportivos.html">Ver mais</a>
@@ -56,7 +56,7 @@ imagens _para guradar as imagens usadas
 <!--Copos stanley-->
       <div class="capa-video">
         <h3>Copos Stanley</h3>
-        <video src="imagens/Capa copos site.mp4" class="capa"></video>
+        <video muted src="imagens/Capa copos site.mp4" class="capa"></video>
         <p>Copos Stanley personalizados</p>
         <a href="copos.html">Ver mais</a>
       </div>
@@ -64,7 +64,7 @@ imagens _para guradar as imagens usadas
 
       <div class="capa-video">
         <h3>Posts para Instagram</h3>
-        <video src="imagens/Capa posts site.mp4" class="capa"></video>
+        <video muted src="imagens/Capa posts site.mp4" class="capa"></video>
         <p>Posts feitos para instagram</p>
         <a href="posts.html">Ver mais</a>
 
@@ -72,7 +72,7 @@ imagens _para guradar as imagens usadas
 
       <div class="capa-video">
         <h3>Logos</h3>
-        <video src="imagens/Capa Logos site.mp4" class="capa"></video>
+        <video muted src="imagens/Capa Logos site.mp4" class="capa"></video>
         <p> Logos para fotos de perfil de midias sociais</p>
         <a href="logos.html">Ver mais</a>
 
@@ -80,7 +80,7 @@ imagens _para guradar as imagens usadas
 
     <div class="projeto-item">
 <h3>Moonlight</h3>
-<img src="imagens/moonlight.png" alt="">
+<img muted src="imagens/moonlight.png" alt="">
 <p>Identidade visual criada da Gráfica Moonlight (Projeto SENAI)</p>
 <a href="Moonlight.html">Ver mais</a>
 
@@ -88,7 +88,7 @@ imagens _para guradar as imagens usadas
 
     <div class="capa-video">
       <h3>Posts para Instagram</h3>
-      <video src="imagens/Capa senai site.mp4" class="capa"></video>
+      <video muted src="imagens/Capa senai site.mp4" class="capa"></video>
       <p>Projetos feitos no Senai</p>
       <a href="Senai.html">Ver mais</a>
 
@@ -127,6 +127,33 @@ imagens _para guradar as imagens usadas
     });
   });
 </script>
+<script>
+// Função para detectar dispositivos móveis
+    function isMobileDevice() {
+      return /Android|iPhone|iPad|iPod|Windows Phone|Mobile/i.test(navigator.userAgent);
+    }
+
+    // Verifica se é um dispositivo móvel
+    if (isMobileDevice()) {
+      const video = document.getElementById('video');
+
+      // Configura o Intersection Observer
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            video.play(); // Reproduz o vídeo quando visível
+          } else {
+            video.pause(); // Pausa o vídeo quando fora de vista
+          }
+        });
+      });
+
+      // Observa o vídeo
+      observer.observe(video);
+    } else {
+      console.log("Este recurso é exclusivo para dispositivos móveis.");
+    }
+  </script>
 
 <script>
 // Mostrar o indicador de carregamento
@@ -148,6 +175,8 @@ document.addEventListener('DOMContentLoaded', () => {
     hideLoadingIndicator();
   }, 5000);
 });
+
+
 </script>
 
 </html>
