@@ -168,6 +168,38 @@ margin-bottom: 10px;
     color: #f2f0ef; /* Cor ao passar o mouse */
   }
 
-  
-  /* css dos flyers  */
-  
+/* Estilos do indicador */
+#loading-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  text-align: center;
+}
+
+/* Ocultar indicador inicialmente */
+#loading-indicator.hidden {
+  display: none;
+}
+
+/* Estilo do vídeo */
+#loading-indicator video {
+  width: 500px; /* Ajuste o tamanho do vídeo */
+  height: auto;
+  border-radius: 10px; /* Opcional: bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do texto */
+#loading-indicator p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #555;
+}

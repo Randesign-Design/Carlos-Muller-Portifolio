@@ -24,7 +24,13 @@ imagens _para guradar as imagens usadas
     </div>
   
   </header>
-  
+  <div id="loading-indicator" class="loading">
+    <video autoplay muted loop>
+      <source src="imagens/logo animada principal .mp4" type="video/mp4" />
+      Seu navegador não suporta vídeos HTML5.
+    </video>
+    <p>Carregando...</p>
+  </div>
   
   
   <section id="sobre" class="container">
@@ -41,8 +47,8 @@ imagens _para guradar as imagens usadas
       <!--Flyers esportivos-->
       <div class="capa-video">
         <h3>Flyers Esportivos</h3>
-       <video id="video" src="imagens/SITE CAPA FLYERS.mp4" class="capa"></video>
-   <div id="time-display" 0:03></div>
+       <video src="imagens/SITE CAPA FLYERS.mp4" class="capa"></video>
+  
         <p>Desenvolvimento e estudo de flyer esportivos para  posts de instagram</p>
         <a href="Flyers esportivos.html">Ver mais</a>
       </div>
@@ -81,7 +87,12 @@ imagens _para guradar as imagens usadas
 
     </div>
 
-   
+    <div class="projeto-item">
+      <h3>Projetos Senai</h3>
+      <img src="imagens/senai capa.png" alt="">
+      <p>Projetos e avaliações do SENAI</p>
+      <a href="Senai.html">Ver mais</a>
+
   </section>
 
 
@@ -98,11 +109,6 @@ imagens _para guradar as imagens usadas
 </body>
 
 <script>
-  const video = document.getElementById('video');
-    const timeDisplay = document.getElementById('time-display');
-
-    // Defina o momento exato ao qual deseja retornar
-    const specificTime = 3; // exemplo: 10 segundos
   // Seleciona todos os vídeos com a classe "video-hover"
   const videos = document.querySelectorAll('.capa');
 
@@ -117,9 +123,30 @@ imagens _para guradar as imagens usadas
     // Pausa o vídeo ao tirar o mouse
     video.addEventListener('mouseout', () => {
       video.pause();
-      video.currentTime = 3;
+      video.currentTime = 4;
     });
   });
+</script>
+<script>
+// Mostrar o indicador de carregamento
+function showLoadingIndicator() {
+  document.getElementById('loading-indicator').classList.remove('hidden');
+}
+
+// Ocultar o indicador de carregamento
+function hideLoadingIndicator() {
+  document.getElementById('loading-indicator').classList.add('hidden');
+}
+
+// Exemplo de uso ao carregar a página
+document.addEventListener('DOMContentLoaded', () => {
+  showLoadingIndicator();
+
+  // Simular carregamento (2 segundos)
+  setTimeout(() => {
+    hideLoadingIndicator();
+  }, 2000);
+});
 </script>
 
 </html>
