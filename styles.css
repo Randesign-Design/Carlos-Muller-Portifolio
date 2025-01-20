@@ -212,3 +212,77 @@ margin-bottom: 10px;
   font-size: 18px;
   color: #555;
 }
+
+
+/* Estilo do botão de WhatsApp */
+.whatsapp-button {
+  position: fixed; /* Permite que o botão flutue */
+  bottom: 20px;    /* Distância da parte inferior da tela */
+  right: 20px;     /* Distância do lado direito da tela */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50%; /* Torna o botão circular */
+  padding: 15px;
+  width: 40px;        /* Largura igual à altura */
+  height: 40px;       /* Altura igual à largura */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, background-color 0.3s;
+  z-index: 1000; /* Garante que o botão fique acima do conteúdo */
+}
+
+.whatsapp-button:hover {
+  background-color: #1da851;
+}
+
+
+
+.imagem-zap {
+
+  width: 90%;
+  height: auto;
+
+}
+
+
+@media (max-width: 768px){
+
+.whatsapp-button {
+
+  position: fixed; /* Permite que o botão flutue */
+  bottom: 20px;    /* Distância da parte inferior da tela */
+  right: 20px;     /* Distância do lado direito da tela */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50%; /* Torna o botão circular */
+  padding: 15px;
+  width: 20px;        /* Largura igual à altura */
+  height: 20px;       /* Altura igual à largura */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, background-color 0.3s;
+  z-index: 1000; /* Garante que o botão fique acima do conteúdo */
+
+  .imagem-zap {
+
+    width: 100%;
+    height: auto;
+  
+  }
+  
+}
+
+
+}
