@@ -33,7 +33,7 @@ body {
   }
   
   header nav ul li a:hover {
-    color: #ff6347;
+    color: #771c23;
   }
   
 body {
@@ -144,6 +144,15 @@ margin-bottom: 10px;
     background: #771c23;
     color: #f2f0ef;
   }
+
+
+
+.capa-video i {
+
+   color: #a3242e;
+ 
+}
+
   footer {
     text-align: center;
     padding: 1rem 0;

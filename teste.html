@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canto Direito</title>
+  <style>
+    .container {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      background-color: lightblue;
+      border: 1px solid #000;
+    }
+
+    .icon {
+      position: absolute; /* Necessário para posicionar dentro do contêiner */
+      top: 10px; /* Distância do topo */
+      right: 10px; /* Distância da direita */
+      z-index: 10; /* Garante que está acima de outros elementos */
+      font-size: 1.5rem;
+      color: white;
+      background-color: red;
+      padding: 10px;
+      border-radius: 50%; /* Torna o ícone circular */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <video class="video" src="imagens/logo animada principal .mp4" autoplay muted loop style="width: 100%; height: 100%;"></video>
+    <div class="icon">▶</div>
+  </div>
+</body>
+</html>

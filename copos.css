@@ -12,11 +12,33 @@ header {
   text-align: center;
 }
 
-.Galeria-stanley {
+.Grid-stanley {
+
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3,1fr);
   gap: 20px;
-  padding: 20px;
+margin: 50px;
+}
+
+.Copos-stanley i {
+
+width: 5px;
+height: auto;
+color: #ec0101;
+position: absolute;
+z-index: 10;
+top: 95%;
+right: 15%;
+
+}
+
+.Copos-stanley {
+  display: grid;
+ position: relative;
+ overflow: visible;
+border-radius: 10px;
+align-items: center;
+justify-items: center;
 }
 
 .arte {
@@ -67,13 +89,13 @@ header {
   height: auto;
   margin: 0px;
   gap: 10px;
-  padding: 20%;
-  border-radius: 10px;
+  padding: 9px;
+  border-radius: 20px;
 }
 
 
 @media (max-width: 768px) {
-  .Galeria-stanley {
+  .Grid-stanley {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
@@ -81,10 +103,26 @@ header {
     max-width: 90%;
     padding: 5px;
   }
+
+}
+
+@media (max-width: 1100 ) and (min-width: 521px){
+
+  .Copos-stanley i {
+
+    width: 5px;
+    height: auto;
+    color: #ec0101;
+    position: absolute;
+    z-index: 10;
+    top: 85%;
+    right: 10%;
+    
+    }
 }
 
 @media (max-width: 480px) {
-  .Galeria-stanley {
+  .Grid-stanley {
     grid-template-columns: 1fr;
    
   }
@@ -93,4 +131,27 @@ header {
     max-width: 100%;
     padding: 2,5px;
   }
+}
+ 
+.pezão {
+ height: 200px;
+ width: auto;
+text-align: center;
+background-color: #a3242e;
+}
+
+.voltar-pe {
+
+  display: inline-block;
+  margin: 75px;
+  padding: 10px 15px;
+ background-color: #f2f0ef;
+ color: #a3242e;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.voltar-pe:hover {
+  background-color: #771c23;
+  color: #f2f0ef;
 }
