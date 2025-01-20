@@ -78,39 +78,38 @@
   
   /* Seções */
   main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+  flex-direction: row;
+flex-wrap: wrap;
     gap: 30px;
     padding: 20px;
   }
   
   .skills {
+ font-size: 20px;
+    padding: 20px;
+    border: 2px solid #a3242e;
+    border-radius: 10px;
+    width: 70%;
+  }
+  
+.software {
  
     padding: 20px;
     border: 2px solid #a3242e;
     border-radius: 10px;
-    width: 800px;
-  }
-  
-.software {
-  margin-right: 20px ;
-  margin-left: 20px;
-    padding: 20px;
-    border: 2px solid #a3242e;
-    border-radius: 10px;
-    height: 500px;
-    width: 450px;
+   width: 25%;
 
   
 }
 
 
-.intro{
+.intro {
 font-size: 30px ;
     padding: 20px;
     border: 2px solid #a3242e;
     border-radius: 10px;
-width: 1300px ;
+width: 70% ;
 align-items: center;
 }
 
@@ -143,8 +142,31 @@ align-items: center;
   }
 
   .capa-soft {
-   width: 200px;
+   width: 45%;
    height: auto;
    border-radius: 5px;
+
+  }
+
+
+  @media (max-width: 768px){
+
+    main {
+      display: flex;
+    flex-direction: column;
+      gap: 20px;
+      padding: 10px;
+    }
+
+.intro, .software, .skills {
+font-size: 20px;
+width: 100%;
+
+}
+
+.capa-soft {
+
+  width: 40%;
+}
 
   }
