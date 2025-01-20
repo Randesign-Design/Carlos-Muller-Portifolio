@@ -83,6 +83,7 @@
 flex-wrap: wrap;
     gap: 30px;
     padding: 20px;
+  
   }
   
   .skills {
@@ -105,6 +106,7 @@ flex-wrap: wrap;
 
 
 .intro {
+
 font-size: 30px ;
     padding: 20px;
     border: 2px solid #a3242e;
