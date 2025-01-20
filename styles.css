@@ -61,7 +61,7 @@ body {
   
 p1{
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 25px;
+   font-size: clamp(10px, 5vw, 25px);
 }
 
 p{
@@ -230,8 +230,8 @@ margin-bottom: 10px;
   font-weight: bold;
   border-radius: 50%; /* Torna o botão circular */
   padding: 15px;
-  width: 40px;        /* Largura igual à altura */
-  height: 40px;       /* Altura igual à largura */
+  width: 30px;        /* Largura igual à altura */
+  height: 30px;       /* Altura igual à largura */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s, background-color 0.3s;
   z-index: 1000; /* Garante que o botão fique acima do conteúdo */
@@ -240,16 +240,11 @@ margin-bottom: 10px;
 .whatsapp-button:hover {
   background-color: #1da851;
 }
-
-
-
-.imagem-zap {
-
-  width: 90%;
-  height: auto;
-
+ 
+.whatsapp-button img {
+  width: 40px;   /* Aumenta o tamanho da imagem */
+  height: 40px;  /* Mantém a altura proporcional */
 }
-
 
 @media (max-width: 768px){
 
@@ -269,20 +264,21 @@ margin-bottom: 10px;
   font-weight: bold;
   border-radius: 50%; /* Torna o botão circular */
   padding: 15px;
-  width: 20px;        /* Largura igual à altura */
-  height: 20px;       /* Altura igual à largura */
+  width: 25px;        /* Largura igual à altura */
+  height: 25px;       /* Altura igual à largura */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s, background-color 0.3s;
   z-index: 1000; /* Garante que o botão fique acima do conteúdo */
 
-  .imagem-zap {
-
-    width: 100%;
-    height: auto;
-  
-  }
-  
-}
-
 
 }
+
+.zap{
+ width: 80%;  
+height: auto;
+}
+
+}
+
+ 
+
