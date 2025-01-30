@@ -39,14 +39,14 @@ imagens _para guradar as imagens usadas
 
 
   <div id="loading-indicator" class="loading">
-    <video autoplay muted loop>
+    <video id="loading-video" autoplay muted loop>
       <source muted src="imagens/logo animada principal .mp4" type="video/mp4" />
       Seu navegador não suporta vídeos HTML5.
     </video>
     <p></p>
   </div>
-  
-  
+
+
   <section id="sobre" class="container">
     <h2>Sobre Mim</h2>
     <p1>Olá, meu nome é Carlos Eduardo Muller. Sou estudante do SENAI do curso arte finalista. Minha Intenção é entregar satisfação e superação de expectativas.
@@ -207,6 +207,24 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const loadingIndicator = document.getElementById("loading-indicator");
+    const video = document.getElementById("loading-video");
+
+    // Verifica se o vídeo já foi mostrado nesta sessão
+    if (sessionStorage.getItem("videoPlayed")) {
+      loadingIndicator.classList.add("hidden"); // Esconde imediatamente se já foi visto
+    } else {
+      // Quando o vídeo termina, esconde a tela de carregamento
+      video.onended = function () {
+        loadingIndicator.classList.add("hidden");
+        sessionStorage.setItem("videoPlayed", "true"); // Marca que o vídeo já foi mostrado
+      };
+    }
+  });
 </script>
 
 </html>
