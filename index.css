@@ -293,6 +293,36 @@ margin-bottom: 10px;
   height: 40px;  /* Mantém a altura proporcional */
 }
 
+
+.Behance-button {
+  position: fixed; /* Permite que o botão flutue */
+  bottom: 100px;    /* Distância da parte inferior da tela */
+  right: 20px;     /* Distância do lado direito da tela */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50%; /* Torna o botão circular */
+  padding: 15px;
+  width: 30px;        /* Largura igual à altura */
+  height: 30px;       /* Altura igual à largura */
+  z-index: 1000; /* Garante que o botão fique acima do conteúdo */
+}
+
+.Behance-button:hover {
+  background-color: #f8f8f8;
+}
+ 
+.Behance-button img {
+  width: 60px;   /* Aumenta o tamanho da imagem */
+  height: 60px;  /* Mantém a altura proporcional */
+}
+
 @media (max-width: 768px){
 
 .whatsapp-button {
@@ -328,4 +358,5 @@ height: auto;
 }
 
  
+
 
