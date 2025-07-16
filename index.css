@@ -289,8 +289,8 @@ margin-bottom: 10px;
 }
  
 .whatsapp-button img {
-  width: 40px;   /* Aumenta o tamanho da imagem */
-  height: 40px;  /* Mantém a altura proporcional */
+  width: 45px;   /* Aumenta o tamanho da imagem */
+  height: 45px;  /* Mantém a altura proporcional */
 }
 
 
@@ -311,6 +311,7 @@ margin-bottom: 10px;
   padding: 15px;
   width: 30px;        /* Largura igual à altura */
   height: 30px;       /* Altura igual à largura */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   z-index: 1000; /* Garante que o botão fique acima do conteúdo */
 }
 
@@ -319,8 +320,8 @@ margin-bottom: 10px;
 }
  
 .Behance-button img {
-  width: 60px;   /* Aumenta o tamanho da imagem */
-  height: 60px;  /* Mantém a altura proporcional */
+  width: 70px;   /* Aumenta o tamanho da imagem */
+  height: 70px;  /* Mantém a altura proporcional */
 }
 
 @media (max-width: 768px){
