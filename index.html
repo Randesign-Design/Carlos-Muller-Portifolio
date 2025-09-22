@@ -80,7 +80,7 @@ imagens _para guradar as imagens usadas
         <a href="Flyers esportivos.html">Ver mais</a>
       </div>
 
-<!--Copos stanley-->
+<!--Copos stanley
       <div class="capa-video">
         <h3>Copos Stanley</h3>
         <video muted src="imagens/Capa copos site.mp4" class="capa"></video>
@@ -88,7 +88,7 @@ imagens _para guradar as imagens usadas
         <p>Copos Stanley personalizados</p>
         <a href="copos.html">Ver mais</a>
       </div>
-
+    -->
 
       <div class="capa-video">
         <h3>Posts para Instagram</h3>
@@ -138,6 +138,37 @@ imagens _para guradar as imagens usadas
 
 </section>
 
+<section id="projetos" class="container">
+    <h2>(Em construção) </h2>
+<h3>Trabalho de design para empresas</h3>
+    <div class="projetos-grid">
+
+  <div class="capa-video">
+  <h3>A247 bet</h3>
+  <video muted src="imagens/a247.png" class="capa"></video>
+  <i class="fa-solid fa-play"></i>
+  <p> ... </p>
+  <a href=>Ver mais</a>
+</div>
+
+ <div class="capa-video">
+  <h3>CIEE-RS</h3>
+  <video muted src="imagens/ciee_rs_logo.jpg" class="capa"></video>
+  <i class="fa-solid fa-play"></i>
+  <p> ...</p>
+  <a href=>Ver mais</a>
+ </div>
+
+
+
+
+
+ </div>
+</section>
+ 
+
+ 
+
 
   <footer>
 
@@ -150,97 +181,6 @@ imagens _para guradar as imagens usadas
   </footer>
 
 </body>
-
-<script>
-  // Seleciona todos os vídeos com a classe "video-hover"
-  const videos = document.querySelectorAll('.capa');
-
-  // Adiciona eventos para cada vídeo
- 
-    videos.forEach((video) => {
-    // Reproduz o vídeo apenas quando o mouse estiver diretamente sobre ele
-    video.addEventListener('mouseover', () => {
-      video.play();
-    });
-
-    // Pausa o vídeo ao tirar o mouse
-    video.addEventListener('mouseout', () => {
-      video.pause();
-      video.currentTime = 0;
-    });
-  });
-</script>
-<script>
-// Função para detectar dispositivos móveis
-    function isMobileDevice() {
-      return /Android|iPhone|iPad|iPod|Windows Phone|Mobile/i.test(navigator.userAgent);
-    }
-
-    // Verifica se é um dispositivo móvel
-    if (isMobileDevice()) {
-      const video = document.getElementById('video');
-
-      // Configura o Intersection Observer
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            video.play(); // Reproduz o vídeo quando visível
-          } else {
-            video.pause(); // Pausa o vídeo quando fora de vista
-          }
-        });
-      });
-
-      // Observa o vídeo
-      observer.observe(video);
-    } else {
-      console.log("Este recurso é exclusivo para dispositivos móveis.");
-    }
-  </script>
-
-<script>
-
-  
-// Mostrar o indicador de carregamento
-function showLoadingIndicator() {
-  document.getElementById('loading-indicator').classList.remove('hidden');
-}
-
-// Ocultar o indicador de carregamento
-function hideLoadingIndicator() {
-  document.getElementById('loading-indicator').classList.add('hidden');
-}
-
-// Exemplo de uso ao carregar a página
-document.addEventListener('DOMContentLoaded', () => {
-  showLoadingIndicator();
-
-  // Simular carregamento (2 segundos)
-  setTimeout(() => {
-    hideLoadingIndicator();
-  }, 5000);
-});
-
-
-</script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const loadingIndicator = document.getElementById("loading-indicator");
-    const video = document.getElementById("loading-video");
-
-    // Verifica se o vídeo já foi mostrado nesta sessão
-    if (sessionStorage.getItem("videoPlayed")) {
-      loadingIndicator.classList.add("hidden"); // Esconde imediatamente se já foi visto
-    } else {
-      // Quando o vídeo termina, esconde a tela de carregamento
-      video.onended = function () {
-        loadingIndicator.classList.add("hidden");
-        sessionStorage.setItem("videoPlayed", "true"); // Marca que o vídeo já foi mostrado
-      };
-    }
-  });
-</script>
 
 </html>
 

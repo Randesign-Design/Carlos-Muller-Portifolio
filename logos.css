@@ -27,6 +27,20 @@ body {
     justify-items: center;
   }
   
+
+  .item {
+    flex: 0 0 auto;
+    width: 120px;
+    height: 200px;
+    background: #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    font-size: 2rem;
+  }
+
   .arte {
     background-color: #111111;
     border-radius: 10px;
